@@ -1,0 +1,29 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & temp
+*.log
+*.tmp
+*.temp
+
+# Environment / secrets (if you add a backend or forms later)
+.env
+.env.local
+*.pem
+
+# Optional: if you add Node tooling later
+node_modules/
+dist/
+.cache/
+
+# Large source files you might not want in git (uncomment if needed)
+# *.psd
+# *.ai
