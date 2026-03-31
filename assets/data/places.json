@@ -7,7 +7,8 @@
       "eyebrow": "Our favorite hike",
       "title": "Andrew Molera State Park",
       "desc": "A park with a stunning trail system with ridges, meadows, redwoods, bluffs, beaches, and wildflowers.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/molera.webp",
+      "imagePosition": "center"
     },
     {
       "id": "village",
@@ -16,7 +17,8 @@
       "eyebrow": "Our fav coffee spot",
       "title": "The Village",
       "desc": "The best latte in town. Also home to the fantastic restaurant, Solstice.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/village.webp",
+      "imagePosition": "center"
     },
     {
       "id": "lodge",
@@ -25,7 +27,8 @@
       "eyebrow": "Our room block",
       "title": "The Big Sur Lodge",
       "desc": "Where we will be staying with our families all weekend. Our room block is here.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/lodge.webp",
+      "imagePosition": "center"
     },
     {
       "id": "pfeiffer",
@@ -34,7 +37,8 @@
       "eyebrow": "Our sunset spot",
       "title": "Pfeiffer Beach",
       "desc": "A breathtaking natural purple sand beach with dramatic arches.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/pfeiffer.webp",
+      "imagePosition": "center"
     },
     {
       "id": "ventana",
@@ -43,7 +47,8 @@
       "eyebrow": "Our go-to lodging",
       "title": "Ventana Campground",
       "desc": "The best glamping California has to offer.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/ventana.webp",
+      "imagePosition": "bottom"
     },
     {
       "id": "surhouse",
@@ -52,7 +57,8 @@
       "eyebrow": "Our finest dining",
       "title": "The Sur House",
       "desc": "Our favorite fine dining in the region, and where Spencer proposed.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/surhouse.webp",
+      "imagePosition": "center"
     },
     {
       "id": "nepenthe",
@@ -61,7 +67,8 @@
       "eyebrow": "Quintessential Big Sur",
       "title": "Nepenthe and Cafe Kevah",
       "desc": "One of the most iconic casual restaurants on the California coast.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/nepenthe.webp",
+      "imagePosition": "center"
     },
     {
       "id": "pullout",
@@ -70,7 +77,8 @@
       "eyebrow": "Our favorite highway pullout",
       "title": "Spencer & Jenna's View",
       "desc": "The exact spot where Spencer first blurted out I Love You back in 2018.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/pullout.webp",
+      "imagePosition": "center"
     },
     {
       "id": "mcway",
@@ -79,7 +87,8 @@
       "eyebrow": "View Spot",
       "title": "McWay Falls",
       "desc": "One of the stunning wonders of Big Sur.",
-      "image": "assets/images/nepenthe.webp"
+      "image": "assets/images/mcway.webp",
+      "imagePosition": "center"
     }
   ]
 }

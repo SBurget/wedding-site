@@ -60,8 +60,9 @@
     if (!quicklook) return;
     clearTimeout(quicklookTimer);
 
+    const pos = place.imagePosition || 'center';
     const imageHtml = place.image
-      ? `<div class="map-quicklook-image"><img src="${place.image}" alt="${place.title || ''}" loading="lazy"></div>`
+      ? `<div class="map-quicklook-image"><img src="${place.image}" alt="${place.title || ''}" style="object-position: ${pos}" loading="lazy"></div>`
       : '';
 
     quicklook.innerHTML = `
@@ -96,6 +97,7 @@
     if (place.image) {
       drawerImg.src = place.image;
       drawerImg.alt = place.title || '';
+      drawerImg.style.objectPosition = place.imagePosition || 'center';
       drawerImgWrap.style.display = '';
     } else {
       drawerImgWrap.style.display = 'none';
