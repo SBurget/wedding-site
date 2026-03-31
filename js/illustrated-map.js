@@ -35,8 +35,8 @@
   let quicklookTimer = null;
   let currentIndex = -1;
 
-  // Detect touch / no-hover device (matches CSS `@media (hover: none)`)
-  const isTouch = () => window.matchMedia('(hover: none)').matches;
+  // Detect mobile device primarily by layout width so touch-enabled laptops still get desktop UX
+  const isMobile = () => window.innerWidth <= 768;
 
   // ── Invite prompt ─────────────────────────────────────────────────────────
   function dismissInvite() {
@@ -48,14 +48,14 @@
   // ── Active dot state ──────────────────────────────────────────────────────
   function setActiveDot(id) {
     if (!svgEl) return;
-    svgEl.querySelectorAll('circle.cls-1').forEach((c) => {
-      c.classList.toggle('is-active', c.id === `dot-${id}`);
+    svgEl.querySelectorAll('.map-interactable').forEach((g) => {
+      g.classList.toggle('is-active', g.id === `dot-${id}`);
     });
   }
 
   function clearActiveDot() {
     if (!svgEl) return;
-    svgEl.querySelectorAll('circle.cls-1').forEach((c) => c.classList.remove('is-active'));
+    svgEl.querySelectorAll('.map-interactable').forEach((g) => g.classList.remove('is-active'));
   }
 
   // ── Quick-Look card (desktop hover) ───────────────────────────────────────
@@ -169,14 +169,14 @@
 
       // ── Desktop: hover ────────────────────────────────────────────────────
       dot.addEventListener('mouseenter', () => {
-        if (isTouch()) return;
+        if (isMobile()) return;
         dismissInvite();
         setActiveDot(place.id);
         showQuicklook(place);
       });
 
       dot.addEventListener('mouseleave', () => {
-        if (isTouch()) return;
+        if (isMobile()) return;
         clearActiveDot();
         // Small delay so mousing into the card keeps it open
         hideQuicklook(120);
@@ -186,7 +186,7 @@
       dot.addEventListener('click', (e) => {
         e.stopPropagation();
         dismissInvite();
-        if (isTouch()) {
+        if (isMobile()) {
           setActiveDot(place.id);
           openDrawer(place);
         }
